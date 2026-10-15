@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "outDir": "dist",
+    "strict": false,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": ["02_typescript/src/**/*"]
+}
