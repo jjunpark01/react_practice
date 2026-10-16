@@ -10,7 +10,14 @@
 // - 점수(0~100)에 따라 A, B, C, D, F 반환 (if-else & switch)
 // ==========================================
 console.log('=== 1단계: 학점 계산기 ===');
-// TODO: 여기에 코드를 작성하세요.
+function getGrade(score){
+    if(score>=90) return 'A';
+    else if(score>=80) return 'B';
+    else if(score>=70) return 'C';
+    else if (score>=60 )return 'D';
+    else return 'F';
+}
+console.log(getGrade(100));
 
 
 // ==========================================
@@ -21,8 +28,16 @@ console.log('=== 1단계: 학점 계산기 ===');
 // ==========================================
 console.log('\n=== 2단계: for 문과 continue/break ===');
 // TODO: 여기에 코드를 작성하세요.
-
-
+let sum=0;
+let sum_even=0;
+for(let i=1; i<=100; i++){
+    sum+= i;
+    if(i%2===0){
+        sum_even+=i;
+    }
+}
+console.log(sum);
+console.log(sum_even);
 // ==========================================
 // 3단계: 함수로 로직 분리 + 콜백 연습
 // - getGrade(score): 학점 계산 함수
@@ -32,4 +47,16 @@ console.log('\n=== 2단계: for 문과 continue/break ===');
 // ==========================================
 console.log('\n=== 3단계: 함수 분리, 콜백, 삼항/null병합 연산자 ===');
 // TODO: 여기에 코드를 작성하세요.
+function printGrade(name,score,callback){
+    const grade = getGrade(score);
+    callback(name, grade);
+    score>=60 ? console.log("합격"):console.log("불합격");
+}
+printGrade("형준",100,(name,grade)=>console.log(
+    `[통지표] ${name} 학생의 등급은 ${grade}입니다.`));
+    
+const inputName = null;
+const userName = inputName ?? "게스트";
+
+console.log(userName); // 게스트
 

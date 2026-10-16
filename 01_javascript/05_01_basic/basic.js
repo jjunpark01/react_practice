@@ -13,7 +13,7 @@
 // ==========================================
 console.log('=== 1단계: 변수/상수 선언 및 출력 ===');
 // TODO: 여기에 코드를 작성하세요.
-let name = "백종민"; const age = 30; const job = "개발자";
+let name = "박형준"; const age = 26; const job = "학생";
 
 
 // ==========================================
@@ -35,4 +35,18 @@ console.log(`${name}(${age}세)은 개발자입니다: ${isDev}`);
 // ==========================================
 console.log('\n=== 3단계: 형 변환 비교 & NaN 테스트 ===');
 // TODO: 여기에 코드를 작성하세요.
+console.log("10"+"5");
+console.log(Number("10")+Number("5"));
+console.log(Number("hello"));
+console.log(isNaN("hello")); 
+console.log(Number.isNaN("hello"));
+
+
+
+
+
+
+
+
+
 

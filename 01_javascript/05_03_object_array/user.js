@@ -11,4 +11,7 @@ console.log('=== 2단계: 객체 다루기 & 메서드 ===');
 // TODO: 점 표기법(user.name)과 대괄호 표기법(user["email"]) 접근
 // TODO: 프로퍼티 추가, 수정, 삭제(delete), in 연산자 확인
 // TODO: 객체 메서드 정의 및 호출 (예: printInfo())
+const user={name : "박형준", age : 26, email : "gudwns2403@com"};
+console.log(user.name);
+console.log(user["email"]);
 
